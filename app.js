@@ -1,4 +1,8 @@
 
+//add modules
+const Manager = require('./lib/Manager.js');
+const Engineer = require('./lib/Engineer.js');
+const Intern = require('./lib/Intern.js');
 
 console.log(`
 ::::::::::: :::::::::                ::::::::  :::::::::: ::::    ::: 
@@ -10,4 +14,4 @@ console.log(`
          ###     ###                      ########  ########## ###    ####   
 
 --------------------------Team Profile Generator---------------------------
-`)
+`);

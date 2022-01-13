@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/ChrisKurz098/TP-Gen#readme",
   "dependencies": {
-    "inquirer": "^8.2.0",
+    "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
     "jest": "^27.4.7"
   }
 }

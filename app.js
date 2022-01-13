@@ -1,3 +1,4 @@
+
 const Program = require('./lib/Program.js');
 
 //display title
@@ -14,7 +15,9 @@ console.log(`
 `);
 
 //run program
- new Program().initializePrompt();
+ const program = new Program();
+program.initializePrompt();
+
 
 
 //data.employeeArray conatins all empoyee objects

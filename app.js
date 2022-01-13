@@ -12,11 +12,20 @@ console.log(`
          ###     ###                      ########  ########## ###    ####   
 
 --------------------------Team Profile Generator---------------------------
+-------------------------------by Chris Kurz-------------------------------
+ 
+ 
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                  Welcome! 
+Please fill out the following prompts. To finish select "Done" when prompted.
+Doing so will generate an HTML file containing your data!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
 `);
 
 //run program
- const program = new Program();
-program.initializePrompt();
+new Program().initializePrompt();
+
 
 
 

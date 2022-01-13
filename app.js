@@ -1,5 +1,11 @@
 
-const Program = require('./lib/Program.js');
+const run = require('./lib/program.js');
+
+//add modules
+const Manager = require('./lib/Manager.js');
+const Engineer = require('./lib/Engineer.js');
+const Intern = require('./lib/Intern.js');
+const inquirer = require('inquirer');
 
 //display title
 console.log(`
@@ -24,8 +30,17 @@ Doing so will generate an HTML file containing your data!
 `);
 
 //run program
-new Program().initializePrompt();
+function main() {
+     run.initializePrompt()
+     .then(run.saveEmployee(answer)
+     .then(({ empoyeeType }) => run.getGeneralInfo(empoyeeType)
+     .then(
 
+     )));
+     
+}
+
+main();
 
 
 

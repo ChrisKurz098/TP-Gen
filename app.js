@@ -1,9 +1,6 @@
+const Program = require('./lib/Program.js');
 
-//add modules
-const Manager = require('./lib/Manager.js');
-const Engineer = require('./lib/Engineer.js');
-const Intern = require('./lib/Intern.js');
-
+//display title
 console.log(`
 ::::::::::: :::::::::                ::::::::  :::::::::: ::::    ::: 
     :+:     :+:    :+:              :+:    :+: :+:        :+:+:   :+:  
@@ -15,3 +12,9 @@ console.log(`
 
 --------------------------Team Profile Generator---------------------------
 `);
+
+//run program
+ new Program().initializePrompt();
+
+
+//data.employeeArray conatins all empoyee objects

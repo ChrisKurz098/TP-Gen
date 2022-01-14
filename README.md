@@ -3,7 +3,7 @@
 # TP-Gen
 
 ## Description
-    This app will create an HTML file containg basic information for memebrs of a team based on the users input. 
+This app will create an HTML file containg basic information for memebrs of a team based on the users input. 
 
 
 
@@ -13,11 +13,11 @@
 * [Usage](#usage) 
 
 ## Installation
-    This app reqires Node.js to be installed andfor inquirer to be installed via npm.
+This app reqires Node.js to be installed andfor inquirer to be installed via npm.
          
 
 ## Usage
-    This simple app allows the user to quickly create an HTML file containg a table of all members of a team, including importaint information like contact info.
+This simple app allows the user to quickly create an HTML file containg a table of all members of a team, including importaint information like contact info.
            
 ## Questions
 Chris Kurz              [Github](https://github.com/chriskurz098)

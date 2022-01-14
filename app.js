@@ -24,7 +24,7 @@ Doing so will generate an HTML file containing your data!
 `);
 
 //run program
-new Program().initializePrompt();
+new Program().getGeneralInfo('manager');
 
 
 

@@ -1,7 +1,6 @@
 
-const Program = require('./lib/Program.js');
+const run = require('./lib/program.js');
 
-//display title
 console.log(`
 ::::::::::: :::::::::                ::::::::  :::::::::: ::::    ::: 
     :+:     :+:    :+:              :+:    :+: :+:        :+:+:   :+:  
@@ -17,16 +16,13 @@ console.log(`
  
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                                   Welcome! 
-Please fill out the following prompts. To finish select "Done" when prompted.
-Doing so will generate an HTML file containing your data!
+    Please fill out the following prompts. To finish select "Done" when 
+prompted. Doing so will generate an HTML file containing your data!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  
 `);
 
 //run program
-new Program().getGeneralInfo('manager');
+const data =  run.getGeneralInfo('manager');
 
 
-
-
-//data.employeeArray conatins all empoyee objects

@@ -1,7 +1,7 @@
 const run = require('./generate-file.js');
 module.exports = {
-    generateHTML(data) {
-        console.log(data[0].constructor.name);
+    generateHTML(employeeArray) {
+      
         const string = `
 <!DOCTYPE html>
 <html lang="en">
@@ -51,7 +51,7 @@ th,td {
             <th>Email</th>
             <th>Office Number</th>
         </tr>
-        ${addEngineers(data, 'Manager')}
+        ${addEmployee(employeeArray, 'Manager')}
     </table>
 
     <h2>Engineers</h2>
@@ -62,7 +62,7 @@ th,td {
             <th>Email</th>
             <th>GitHub Account</th>
         </tr>
-        ${addEngineers(data, 'Engineer')}
+        ${addEmployee(employeeArray, 'Engineer')}
       
     </table>
 
@@ -74,7 +74,7 @@ th,td {
             <th>Email</th>
             <th>School</th>
         </tr>
-        ${addEngineers(data, 'Intern')}
+        ${addEmployee(employeeArray, 'Intern')}
     </table>
 
 </body>
@@ -88,29 +88,30 @@ th,td {
 
 
 
-function addEngineers(data, type) {
+function addEmployee(arr, type) {
     let string = '';
 
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
 
-        if (data[i].constructor.name === type) {
+        if (arr[i].constructor.name === type) {
             string += `
     <tr>
-    <td>${data[i].fullName[0]} ${data[i].fullName[1]}</td>
-    <td>${data[i].id}</td>
-    <td><a <a href = "mailto:${data[i].email}">${data[i].email}</a></td>
+    <td>${arr[i].fullName[0]} ${arr[i].fullName[1]}</td>
+    <td>${arr[i].id}</td>
+    <td><a <a href = "mailto:${arr[i].email}">${arr[i].email}</a></td>
     `;
+    //add additional info based on type
             switch (type) {
                 case 'Manager': string += `
-    <td>${data[i].officeNumber}</td>
+    <td>${arr[i].officeNumber}</td>
     </tr >`
                     break;
                 case 'Engineer': string += `
-    <td><a href = "https://github.com/${data[i].github}" target="_blank">${data[i].github}</a></td>
+    <td><a href = "https://github.com/${arr[i].github}" target="_blank">${arr[i].github}</a></td>
     </tr >`
                     break;
                 case 'Intern': string += `
-    <td>${data[i].school}</td>
+    <td>${arr[i].school}</td>
     </tr >`
                     break;
 

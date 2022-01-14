@@ -13,7 +13,8 @@ This app will create an HTML file containg basic information for memebrs of a te
 * [Usage](#usage) 
 
 ## Installation
-This app reqires Node.js to be installed and for inquirer to be installed via npm. Please run 
+This app reqires Node.js to be installed and for inquirer to be installed via npm. 
+Please run "npm i"
          
 
 ## Usage
